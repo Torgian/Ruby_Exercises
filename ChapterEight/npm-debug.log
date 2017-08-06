@@ -1,0 +1,76 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/Cellar/node/6.2.1/libexec/npm/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'https://get.rvm.io' ]
+2 info using npm@3.9.3
+3 info using node@v7.10.0
+4 verbose config Skipping project config: /Users/nathanielnasarow/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData https://get.rvm.io
+9 silly fetchOtherPackageData https://get.rvm.io
+10 silly cache add args [ 'https://get.rvm.io', null ]
+11 verbose cache add spec https://get.rvm.io
+12 silly cache add parsed spec Result {
+12 silly cache add   raw: 'https://get.rvm.io',
+12 silly cache add   scope: null,
+12 silly cache add   name: null,
+12 silly cache add   rawSpec: 'https://get.rvm.io',
+12 silly cache add   spec: 'https://get.rvm.io',
+12 silly cache add   type: 'remote' }
+13 silly mapToRegistry name https://get.rvm.io
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry data Result {
+16 silly mapToRegistry   raw: 'https://get.rvm.io',
+16 silly mapToRegistry   scope: null,
+16 silly mapToRegistry   name: null,
+16 silly mapToRegistry   rawSpec: 'https://get.rvm.io',
+16 silly mapToRegistry   spec: 'https://get.rvm.io',
+16 silly mapToRegistry   type: 'remote' }
+17 silly mapToRegistry uri https://get.rvm.io
+18 verbose addRemoteTarball https://get.rvm.io not in flight; adding
+19 verbose addRemoteTarball [ 'https://get.rvm.io', null ]
+20 info retry fetch attempt 1 at 1:54:38 PM
+21 info attempt registry request try #1 at 1:54:38 PM
+22 http fetch GET https://get.rvm.io/
+23 verbose request id 1f0560df6d6d05f4
+24 http fetch 200 https://get.rvm.io
+25 silly fetchAndShaCheck shasum 53af88c17ff95c3b0bb14ea59bd44abfd819d7b3
+26 verbose addTmpTarball /var/folders/rd/j8tkq7jj4376zw315_9msgwr0000gn/T/npm-43498-e3ebcb0f/get.rvm.io not in flight; adding
+27 verbose correctMkdir /Users/nathanielnasarow/.npm correctMkdir not in flight; initializing
+28 verbose addTmpTarball validating metadata from /var/folders/rd/j8tkq7jj4376zw315_9msgwr0000gn/T/npm-43498-e3ebcb0f/get.rvm.io
+29 verbose tar unpack /var/folders/rd/j8tkq7jj4376zw315_9msgwr0000gn/T/npm-43498-e3ebcb0f/get.rvm.io
+30 verbose tar unpacking to /var/folders/rd/j8tkq7jj4376zw315_9msgwr0000gn/T/npm-43498-e3ebcb0f/unpack-5c223f54
+31 silly gentlyRm /var/folders/rd/j8tkq7jj4376zw315_9msgwr0000gn/T/npm-43498-e3ebcb0f/unpack-5c223f54 is being purged
+32 verbose gentlyRm don't care about contents; nuking /var/folders/rd/j8tkq7jj4376zw315_9msgwr0000gn/T/npm-43498-e3ebcb0f/unpack-5c223f54
+33 silly gunzTarPerm modes [ '755', '644' ]
+34 error not a package /var/folders/rd/j8tkq7jj4376zw315_9msgwr0000gn/T/npm-43498-e3ebcb0f/get.rvm.io
+35 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/var/folders/rd/j8tkq7jj4376zw315_9msgwr0000gn/T/npm-43498-e3ebcb0f/unpack-5c223f54/package.json'
+35 silly fetchPackageMetaData  error for https://get.rvm.io { Error: ENOENT: no such file or directory, open '/var/folders/rd/j8tkq7jj4376zw315_9msgwr0000gn/T/npm-43498-e3ebcb0f/unpack-5c223f54/package.json'
+35 silly fetchPackageMetaData   errno: -2,
+35 silly fetchPackageMetaData   code: 'ENOENT',
+35 silly fetchPackageMetaData   syscall: 'open',
+35 silly fetchPackageMetaData   path: '/var/folders/rd/j8tkq7jj4376zw315_9msgwr0000gn/T/npm-43498-e3ebcb0f/unpack-5c223f54/package.json' }
+36 silly rollbackFailedOptional Starting
+37 silly rollbackFailedOptional Finishing
+38 silly runTopLevelLifecycles Starting
+39 silly runTopLevelLifecycles Finishing
+40 silly install printInstalled
+41 verbose stack Error: ENOENT: no such file or directory, open '/var/folders/rd/j8tkq7jj4376zw315_9msgwr0000gn/T/npm-43498-e3ebcb0f/unpack-5c223f54/package.json'
+42 verbose cwd /Users/nathanielnasarow/RubyExercises/ChapterEight
+43 error Darwin 16.6.0
+44 error argv "/usr/local/bin/node" "/usr/local/Cellar/node/6.2.1/libexec/npm/bin/npm" "install" "https://get.rvm.io"
+45 error node v7.10.0
+46 error npm  v3.9.3
+47 error path /var/folders/rd/j8tkq7jj4376zw315_9msgwr0000gn/T/npm-43498-e3ebcb0f/unpack-5c223f54/package.json
+48 error code ENOENT
+49 error errno -2
+50 error syscall open
+51 error enoent ENOENT: no such file or directory, open '/var/folders/rd/j8tkq7jj4376zw315_9msgwr0000gn/T/npm-43498-e3ebcb0f/unpack-5c223f54/package.json'
+52 error enoent ENOENT: no such file or directory, open '/var/folders/rd/j8tkq7jj4376zw315_9msgwr0000gn/T/npm-43498-e3ebcb0f/unpack-5c223f54/package.json'
+52 error enoent This is most likely not a problem with npm itself
+52 error enoent and is related to npm not being able to find a file.
+53 verbose exit [ -2, true ]
